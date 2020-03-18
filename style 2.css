@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    background-color: #1B4079;
+}
+#container {
+    grid-template-rows: 80% 20%;
+    /* height: 100vh; */
+    justify-content: center;
+}
+
+#board {
+    height: 80vh;
+    width: 95vw;
+    padding: 2.5vw;
+    align-self: center;
+    justify-self: center;
+    background-color: #2980b9;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 3px solid black;
+    margin-left: 2.5vh;
+    margin-right: 2.5vh;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+}
+
+#info {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background-color: cadetblue;
+    height: 20vh;
+}
+
+#score {
+    display: grid;
+    background-color: #032B43;
+    grid-template-areas: 
+    "po so . . pt ts"
+    ;
+}
+
+.players {
+    display: grid;
+    background-color: #032B43;
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 20px;
+}
+
+#controler {
+    display: grid;
+    grid-template-columns: 1fr 1fr 6fr;
+    background-color: #2980B9;
+    column-gap: 4px;
+}
+
+input {
+    display: grid;
+    border-radius: 5px;
+}
+
+#start {
+    display: grid;
+    background-color: #2980B9;
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.line {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.box {
+    text-align: center;
+    table-layout: fixed;
+    border: 1px solid black;
+}
+
+.pOneT{
+    display: grid;
+    grid-area: po;
+    
+}
+
+#onePoints {
+    display: grid;
+    grid-area: so;
+    padding-top: 5px;
+    color: white;
+    font-size: 20px;
+}
+
+.pTowT {
+    display: grid;
+    grid-area: pt;
+}
+
+#twoPoints {
+    display: grid;
+    grid-area: ts;
+    padding-top: 5px;
+    color: white;
+    font-size: 20px;
+}
+
+.inst {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+i {
+    size: 10px;
+}
